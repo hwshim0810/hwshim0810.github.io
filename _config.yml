@@ -1,5 +1,5 @@
-title:            Site Title
-description:      Describe your website here.
+title:            Hyun-Woo's blog
+description:      Hyun-Woo's blog
 disqus_shortname: 
 reading_time:     true
 words_per_minute: 200
@@ -9,14 +9,14 @@ url:
 
 # Owner/author information
 owner:
-  name:           Your Name
+  name:           Shim Hyun-Woo
   avatar:         avatar.jpg
-  bio:            "Your bio goes here. It shouldn't be super long but a good sentence or two should suffice."
-  email:          you@email.com
+  bio:            "Step by step"
+  email:          hwshim8808@gmail.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:        
   facebook:       
-  github:         
+  github:         "https://github.com/hwshim0810"
   stackexchange:  
   linkedin:       
   instagram:      
