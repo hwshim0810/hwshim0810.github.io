@@ -1,32 +1,33 @@
 ---
 layout: page
-title: About the Jekyll Theme
+title: Profile
 image:
   feature: abstract-5.jpg
-  credit: dargadgetz
-  creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
 comments: false
-modified: 2016-02-01
+modified: 2017-04-03
 ---
 
-They say three times the charm, so here is another free responsive Jekyll blog theme for you. I've learned a ton since open sourcing my first two themes [on Github](http://github.com/mmistakes), and wanted to try a few new things this time around. 
+# 심현우(Shim Hyun Woo)
 
-If you've used any of [my other themes](http://mademistakes.com/work/jekyll-themes/) most of this should be familiar territory...
+## Contact
+[![e-mail](https://img.shields.io/badge/email-hwshim8808@gmail.com-blue.svg)](mailto:hwshim8808@gmail.com)
 
-## HPSTR Features:
+## Tach Stack
+[![StackShare](https://img.shields.io/badge/tech-stack(CLICK!)-0690fa.svg?style=flat)](https://stackshare.io/hwshim0810/techstack) 에서 저의 Stack 에 대한 저의 의견확인이 가능합니다.
 
-* Compatible with Jekyll 3 and GitHub Pages.
-* Responsive templates for post, page, and post index `_layouts`. Looks great on mobile, tablet, and desktop devices.
-* Gracefully degrades in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.  
-* Sweet animated menu.
-* Background image support.
-* Support for large images to call out your favorite posts.
-* Optional [Disqus](http://disqus.com) comments.
-* Simple and clear permalink structure[^1].
-* [Open Graph](https://developers.facebook.com/docs/opengraph/) and [Twitter Cards](https://dev.twitter.com/docs/cards) support for a better social sharing experience.
-* [Custom 404 page]({{ site.url }}/404.html) to get you started.
-* [Syntax highlighting]({{ site.url }}/code-highlighting-post/) stylesheets to make your code examples look snazzy.
+| Classification  | Stack |
+| ------------- | ------------- |
+| Language  | Java, python, C++, Javascript, HTML5, markdown  |
+| Framework | Spring, iBatis/myBatis, Node.js, AngularJS  |
+| DB  | Oracle, MySQL  |
+| Libraries | Bootstrap, jQuery, ReactJS  |
+| Utils  | Google drive  |
+| devOps  | github, Eclipse, IntelliJ IDEA  |
 
-<div markdown="0"><a href="{{ site.url }}/theme-setup/" class="btn btn-info">Theme Setup</a> <a href="https://github.com/mmistakes/hpstr-jekyll-theme" class="btn btn-success">Download HPSTR</a></div>
+## Educated
 
-[^1]: Example: *domain.com/category-name/post-title*
+## Certification
+- Network Advisor -- Grade2 (December 13, 2016)
+
+## Military service
+- November 2009 - September 2011 active army service (an honorable discharge)
