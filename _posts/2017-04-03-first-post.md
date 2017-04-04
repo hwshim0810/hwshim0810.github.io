@@ -2,7 +2,8 @@
 layout: post
 title: 첫번째 글
 description: "my first posting"
-tags: [gossip]
+tags: [Gossip]
+comments: false
 image:
   background: triangular.png
 ---
