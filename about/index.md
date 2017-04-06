@@ -27,6 +27,7 @@ modified: 2017-04-03
 ## Educated
 
 ## Certification
+- The Test of " General Computer User, Level-I " (October 28, 2016)
 - Network Advisor -- Grade2 (December 13, 2016)
 
 ## Military service
