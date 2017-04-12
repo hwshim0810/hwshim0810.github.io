@@ -18,7 +18,7 @@ modified: 2017-04-03
 | Classification  | Stack |
 | ------------- | ------------- |
 | Language  | Java, python, C++, Javascript, HTML5, markdown  |
-| Framework | Spring, iBatis/myBatis, Node.js, AngularJS  |
+| Framework | Spring, iBatis/myBatis, Node.js, JS  |
 | DB  | Oracle, MySQL  |
 | Libraries | Bootstrap, jQuery, ReactJS  |
 | Utils  | Google drive  |
@@ -28,7 +28,9 @@ modified: 2017-04-03
 
 ## Certification
 - The Test of " General Computer User, Level-I " (October 28, 2016)
-- Network Advisor -- Grade2 (December 13, 2016)
+* Korea Chamber of Commerce & Industry
+- Network Advisor, Grade2 (December 13, 2016)
+* Information & Commuication Qulification Assocication of Korea
 
 ## Military service
 - November 2009 - September 2011 active army service (an honorable discharge)
