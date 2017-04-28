@@ -17,20 +17,20 @@ modified: 2017-04-03
 
 | Classification  | Stack |
 | ------------- | ------------- |
-| Language  | Java, python, C++, Javascript, HTML5, markdown  |
-| Framework | Spring, iBatis/myBatis, Node.js, JS  |
+| Language  | Java, Python, JSP/Servlet, Javascript, HTML5, markdown  |
+| Framework | Spring, Django, iBatis/myBatis, Node.js, Angular.js |
 | DB  | Oracle, MySQL  |
 | Libraries | Bootstrap, jQuery, ReactJS  |
 | Utils  | Google drive  |
-| devOps  | github, Eclipse, IntelliJ IDEA  |
+| devOps  | github, Eclipse, IntelliJ, PyCharm, Atom  |
 
 ## Educated
 
 ## Certification
 - The Test of " General Computer User, Level-I " (October 28, 2016)
-* Korea Chamber of Commerce & Industry
+    - Korea Chamber of Commerce & Industry
 - Network Advisor, Grade2 (December 13, 2016)
-* Information & Commuication Qulification Assocication of Korea
+    - Information & Commuication Qulification Assocication of Korea
 
 ## Military service
 - November 2009 - September 2011 active army service (an honorable discharge)
