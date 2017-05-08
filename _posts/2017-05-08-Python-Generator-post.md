@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 파이썬의 Generator&Yield
-description: "With statement in python"
+description: "Generator&Yield in python"
 tags: [Python]
 ---
 # 개요
