@@ -51,5 +51,5 @@ tags: [Network, OS]
 
 ## 정리
 <figure>
-	<a href="images/sync.jpg"><img src="images/sync.jpg" alt="Sync/Async..."></a>
+	<a href="/images/sync.jpg"><img src="/images/sync.jpg" alt="Sync/Async..."></a>
 </figure>

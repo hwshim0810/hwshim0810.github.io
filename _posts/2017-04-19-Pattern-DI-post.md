@@ -14,7 +14,7 @@ tags: [DesignPattern, Spring]
 ## Reference전달에 따른 DI
 
 <figure>
-	<a href="images/di00.png"><img src="images/di00.png" alt="DI diagram"></a>
+	<a href="/images/di00.png"><img src="/images/di00.png" alt="DI diagram"></a>
 </figure>
 - A가 B에 의존하고 있음, B는 A에 의존하지 않는다
 	- 즉, B는 A의 변화에 영향을 받지 않는다
@@ -23,7 +23,7 @@ tags: [DesignPattern, Spring]
 - B의 기능이 추가/변경되면 그 영향이 A로 전달된다
 
 <figure>
-	<a href="images/di01.png"><img src="images/di01.png" alt="Dependency Connect"></a>
+	<a href="/images/di01.png"><img src="/images/di01.png" alt="Dependency Connect"></a>
 </figure>
 - ConnectioMaker 인터페이스가 변하면 UserDao가 영향을 받음  
 인터페이스를 구현한 Class인 DConnectionMaker가 다른것으로 바뀌거나 그 내부에서 변화가 생겨도 UserDao에 영향을 주지않게 할 수 있다
