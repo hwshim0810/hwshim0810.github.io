@@ -12,7 +12,7 @@ tags: [Scala, Installation]
 1. jdk 설치
 - sudo apt-add-repository ppa:webupd8team/java
 - sudo apt-get update
-- sudo apt-get install oracle-java9-installer
+- sudo apt-get install oracle-java8-installers
 
 2. Scala 설치
 - http://www.scala-lang.org/download/ 에서 압축 다운
