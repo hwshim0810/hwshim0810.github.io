@@ -8,7 +8,8 @@ tags: [Linux]
 - sudo apt-get install mutt
 
 # 명령어
-> 본문내용 CMD에서 작성
+> 본문내용 CMD에서 작성  
+
 - echo '내용' | mutt -s '제목' 주소@주소 -a 첨부파일
 
 > 본문내용 외부파일 사용
