@@ -4,7 +4,7 @@ title: Profile
 image:
   feature: abstract-5.jpg
 comments: false
-modified: 2017-04-03
+modified: 2017-10-01
 ---
 
 # 심현우(Shim Hyun Woo)
@@ -17,16 +17,16 @@ modified: 2017-04-03
 
 | Classification  | Stack |
 | ------------- | ------------- |
-| Language  | Java, Python, JSP/Servlet, Javascript, HTML5, markdown  |
+| Language  | Java, Python, JSP/Servlet, Javascript, HTML5/CSS3, markdown  |
 | Framework | Spring, Django, iBatis/myBatis, Node.js  |
 | DB  | PostgreSQL, Oracle, MySQL  |
-| Libraries | Bootstrap, jQuery, React.js  |
+| Libraries | Bootstrap, jQuery, Vue.js  |
 | Utils  | Google drive  |
-| devOps  | github, Eclipse, IntelliJ, PyCharm, Atom, Amazon AWS  |
+| devOps  | github, Eclipse, IntelliJ, PyCharm, Atom, Amazon AWS, Selenium  |
 
 ## Experience
 ### 아테나스랩 (Athenaslab)  
-- Backend Developer `2017.05 ~ Now`
+- Backend / Frontend Developer `2017.05 ~ Now`
 
 ## Educated
 
@@ -35,6 +35,8 @@ modified: 2017-04-03
     - Korea Chamber of Commerce & Industry
 - Network Advisor, Grade2 (December 13, 2016)
     - Information & Commuication Qulification Assocication of Korea
+- Industrial Engineer Information Processing (August 4, 2017)
+    - Human Resources Development Service of Korea
 
 ## Military service
 - November 2009 - September 2011 active army service (an honorable discharge)
