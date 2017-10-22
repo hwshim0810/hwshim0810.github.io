@@ -21,6 +21,8 @@ $ sudo apt-get install nvidia-375
 # Cuda toolkit 설치
 1. 설치
 ```bash
+    $ sudo dpkg -i cuda-repo-ubuntu1604-8-0-local-ga2_8.0.61-1_amd64.deb
+    $ sudo apt-get update
     $ sudo apt-get install cuda-8-0
 ````
  
