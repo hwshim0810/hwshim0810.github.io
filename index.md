@@ -1,10 +1,13 @@
 ---
 layout: home
 ---
-# About Theme
+# This blog is...
 
-This theme is Jekyll port of [vangeltzo.com](http://vangeltzo.com/) (by [Vangelis Tzortzis](https://github.com/srekoble)).
+상남자 개발자의 블로그입니다.
 
-To learn how to install and use this theme check out the [installation guide](http://taylantatli.me/Halve/halve-theme/) for more information.
+관심있는 다양한 주제의 글과 이야기, 사진을 주제로 합니다.
 
-If you have a question, find a bug, or just want to say hi, please open an [issue on GitHub](https://github.com/TaylanTatli/Halve/issues/new).
+기술적인 토론이나 지적은 언제든 환영합니다.  
+광고만 아니라면 인사, 아무말대잔치도 괜찮아요😹👌
+
+메세지는 이쪽으로 [Click!](mailto:hwshim8808@gmail.com)
