@@ -1,9 +1,10 @@
-_site
-.DS_Store
-*.sublime-project
-*.sublime-workspace
-codekit-config.json
-node_modules
+# Jekyll
+_site/
+.sass-cache/
+
+# Gem
 Gemfile.lock
-.sass-cache
-.jekyll-metadata
+.editorconfig
+
+# ETC
+sample_posts/
