@@ -11,7 +11,7 @@ layout: compress
       <div class="content">
         <a href="{{ site.url }}" class="logo"><img src="{{ site.url }}/images/{{ site.logo }}"></a>
         <div class="post-title-section">
-          <div class="section-line">Profile <em>/</em></div>
+          <div class="section-line">About <em>/</em></div>
           <h1 class="section-title">It's Me</h1>
           <div class="section-line reverse"><a href="{{ site.url}}">Back to Home</a> <em>/</em></div>
         </div>
@@ -19,14 +19,13 @@ layout: compress
     </div>
 
     <div class="block-right">
+      <a href="{{ site.url }}/about" title="about" class="about-menu-icon"></a>
       <a href="../posts.html" title="posts" class="posts-menu-icon"></a>
       <a title="projects" class="projects-menu-icon">
         <span></span>
       </a>
-      <div class="inner-post content">
-        <div class="date-highlight">{{ site.time | date_to_long_string }}</div>
-        
-        <br>
+      <div id="about-content" class="inner-post content">
+        {{ content }}
       </div>
     </div>
     {% include scripts.html %}

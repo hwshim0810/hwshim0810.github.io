@@ -1,4 +1,5 @@
 .block-left {
+  width: 35%;
   float: left;
   .content {
     z-index: 1;
@@ -7,13 +8,13 @@
 }
 
 .block-right {
+  width: 65%;
   float: right;
   overflow-y: auto;
 }
 
 .block-left,
 .block-right {
-  width: 50%;
   height: 100%;
   position: relative;
   display: table;
@@ -102,6 +103,17 @@ canvas {
   }
 }
 
+.about-menu-icon {
+  position: absolute;
+  top: 30px;
+  right: 160px;
+  width: 20px;
+  height: 25px;
+  border: 2px solid $gray;
+  background: $white;
+}
+
+
 .posts-menu-icon {
   position: absolute;
   top: 30px;
@@ -139,12 +151,17 @@ canvas {
   }
 }
 
+.about-link,
 .posts-link,
 .projects-link {
   position: absolute;
   top: 73px;
   font-size: 12px;
   color: darken($white, 40);
+}
+
+.about-link {
+  right: 160px;
 }
 
 .posts-link {
@@ -438,6 +455,33 @@ canvas {
   }
 }
 
+#about-content {
+  img {
+    margin: 0;
+  }
+  th, td {
+    text-align: center;
+  }
+  h1 {
+    font-size: 55px;
+    position: relative;
+    &:after {
+      content: "";
+      width: 350px;
+      height: 1px;
+      background: #72cc96;
+      bottom: -15px;
+      position: absolute;
+      left: 180px;
+      -webkit-transform: translatex(-50%);
+      -moz-transform: translatex(-50%);
+      -ms-transform: translatex(-50%);
+      -o-transform: translatex(-50%);
+      transform: translatex(-50%);
+    }
+  }
+}
+
 #posts {
   .block-right {
     display: block;
@@ -593,7 +637,7 @@ canvas {
     position: relative;
     left: auto;
     bottom: auto;
-    font-size: 80px;
+    font-size: 60px;
   }
   .tags > li {
     background: none;
