@@ -103,25 +103,41 @@ canvas {
   }
 }
 
-.about-menu-icon {
+.posts-menu-icon {
   position: absolute;
   top: 30px;
-  right: 160px;
   width: 20px;
   height: 25px;
   border: 2px solid $gray;
   background: $white;
 }
 
-
-.posts-menu-icon {
+.til-menu-icon,
+.about-menu-icon,{
   position: absolute;
   top: 30px;
-  right: 90px;
-  width: 20px;
   height: 25px;
-  border: 2px solid $gray;
   background: $white;
+  i {
+    font-size: 2em;
+    color: $gray;
+    &:hover {
+      color: $green;
+    }
+  }
+}
+.about-menu-icon {
+  width: 40px;
+  right: 215px;
+}
+
+.til-menu-icon {
+  width: 28px;
+  right: 160px;
+}
+
+.posts-menu-icon {
+  right: 90px;
   &:before {
     content: '';
     width: 20px;
@@ -151,6 +167,7 @@ canvas {
   }
 }
 
+.til-link,
 .about-link,
 .posts-link,
 .projects-link {
@@ -161,6 +178,10 @@ canvas {
 }
 
 .about-link {
+  right: 215px;
+}
+
+.til-link {
   right: 160px;
 }
 
@@ -771,6 +792,9 @@ canvas {
   }
   .share-buttons span {
     display: none;
+  }
+  .about-info {
+    margin-top: 60px;
   }
 }
 
