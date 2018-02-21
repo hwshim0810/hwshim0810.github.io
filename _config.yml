@@ -1,7 +1,7 @@
 # Site
-title: 
-description: 
-url: 
+title: RealMan's Log
+description: RealMan Character) Making blog
+url: #https://hwshim0810.github.io
 logo: halve.png                                       # Site logo
 locale: ko_KR
 
@@ -29,13 +29,13 @@ sass:
 #google-analytics: UA-XXXXX-Y
 
 # Social Links
-#email:             email
+email:             hwshim8808@gmail.com
 #google.plus:        username
-twitter:            username
+#twitter:            username
 #facebook:           username
-github:             username
-stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-#linkedin:          username
+github:             hwshim0810
+#stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
+linkedin:          hyunwoo-shim
 #xing:              username
 #instagram:          username
 #lastfm:            username
@@ -52,13 +52,18 @@ stackoverflow:     123456/username   from a "http://stackoverflow.com/users/1234
 #keybase:           username
 #xmpp:              username@server.com
 #hackernews:        username
-behance:           username
+#behance:           username
 
 # Gems
 gems:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
+
+# Custom collections
+collections:
+  tils:
+    output: true
 
 # Exclude list
 include: [_pages]
