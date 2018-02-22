@@ -1,7 +1,7 @@
 # Site
 title: RealMan's Log
 description: RealMan Character) Making blog
-url: #https://hwshim0810.github.io
+url: http://localhost:4000  #https://hwshim0810.github.io
 logo: halve.png                                       # Site logo
 locale: ko_KR
 
@@ -63,6 +63,8 @@ gems:
 # Custom collections
 collections:
   tils:
+    output: true
+  about:
     output: true
 
 # Exclude list
