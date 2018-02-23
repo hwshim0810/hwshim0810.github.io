@@ -21,7 +21,7 @@ layout: compress
       </a>
       <div class="content">
         <ul class="posts-list">
-        {% for til in site.tils %}
+        {% for til in site.tils reversed %}
           <li>
             <h2>
               <a href="{{ site.url }}{{ til.url }}" class="post-title">
