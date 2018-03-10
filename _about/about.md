@@ -14,7 +14,7 @@ permalink: /about/
 > hoping to make a better world by creating the best-sofeware with my ability.
 
 ## Contact
-[![e-mail](https://img.shields.io/badge/email-hwshim8808@gmail.com-blue.svg)](mailto:hwshim8808@gmail.com)
+[![e-mail](https://img.shields.io/badge/email-hyunwoo.shim@laziness.xyz-blue.svg)](mailto:hyunwoo.shim@laziness.xyz)
 
 ## Tech Stack
 
