@@ -1,3 +1,9 @@
+.emoji {
+  display: inline;
+  height: 15px;
+  width: 15px;
+}
+
 .block-left {
   width: 30%;
   float: left;
@@ -750,6 +756,11 @@ canvas {
     background: #eaeaea;
     margin-left: 10px;
   }
+}
+
+.date-update {
+  text-align: right;
+  color: #999;
 }
 
 .footer-line {
