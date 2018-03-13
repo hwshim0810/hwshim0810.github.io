@@ -53,10 +53,11 @@ lastfm:            hwshim
 #behance:           username
 
 # Gems
-gems:
+plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
+  - jemoji
 
 # Custom collections
 collections:
