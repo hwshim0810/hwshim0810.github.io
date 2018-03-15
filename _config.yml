@@ -1,7 +1,7 @@
 # Site
-title: RealMan's Log
-description: RealMan Character) Making blog
-url: http://localhost:4000  #https://hwshim0810.github.io
+title: Laziness blog
+description: effort less, more gain
+url: https://hwshim0810.github.io
 logo: halve.png                                       # Site logo
 locale: ko_KR
 
@@ -29,7 +29,7 @@ sass:
 #google-analytics: UA-XXXXX-Y
 
 # Social Links
-email:             hwshim8808@gmail.com
+email:             hyunwoo.shim@laziness.xyz
 #google.plus:        username
 #twitter:            username
 #facebook:           username
