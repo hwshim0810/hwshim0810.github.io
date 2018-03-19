@@ -31,9 +31,10 @@ layout: compress
             </h2>
             <p>{{ post.excerpt | strip_html | truncatewords:10 }}</p>
             <ul class="tags">
-            {% for tag in post.tags %}
+              {% for tag in post.tags %}
               <li><a href="{{ site.url }}/tags#{{ tag }}">{{ tag }}</a></li>
               {% unless forloop.last %}
+                <span class="disqus-comment-count" data-disqus-identifier="{{ post.id }}"></span>
               {% endunless %}
             {% endfor %}
             </ul>
@@ -44,5 +45,6 @@ layout: compress
     </div>
     {% include overlay.html %}
     {% include scripts.html %}
+    <script id="dsq-count-scr" src="https://myblog-4mp0ry3tqm.disqus.com/count.js" async></script>
   </body>
 </html>
