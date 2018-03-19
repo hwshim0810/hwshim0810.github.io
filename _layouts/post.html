@@ -31,11 +31,17 @@ layout: compress
       </a>
       <div class="inner-post content">
         <div class="date-highlight">{% if page.date %}{{ page.date | date: '%d %b %Y' }}{% else %}&#x2756;{% endif %}</div>
-        {% if page.modified %}<div class="date-update">Updated at {{ page.modified | date: '%d %b %Y' }}</div>{% endif %}
+        {% if page.modified %}<div class="right-sub">Updated at {{ page.modified | date: '%d %b %Y' }}</div>{% endif %}
+        <div class="right-sub">
+          <span>:mailbox_with_mail: </span>
+          <a class="counter" href="{{ site.url }}{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.id }}"></a>
+        </div>
         {{ content }}
         <br>
         {% include share.html %}
         {% include page-pagination.html %}
+        <hr class="disqus-seperator" />
+        {% include disqus.html %}
       </div>
     </div>
     {% include scripts.html %}
