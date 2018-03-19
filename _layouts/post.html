@@ -34,7 +34,7 @@ layout: compress
         {% if page.modified %}<div class="right-sub">Updated at {{ page.modified | date: '%d %b %Y' }}</div>{% endif %}
         <div class="right-sub">
           <span>:mailbox_with_mail: </span>
-          <a class="counter" href="{{ site.url }}{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.id }}"></a>
+          <a class="counter" href="{{ site.url }}{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.id }}">0 Comment</a>
         </div>
         {{ content }}
         <br>
