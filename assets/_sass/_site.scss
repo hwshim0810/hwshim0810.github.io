@@ -1,3 +1,7 @@
+.disqus-seperator {
+  margin: 2em 0;
+}
+
 .emoji {
   display: inline;
   height: 15px;
@@ -565,6 +569,14 @@ canvas {
     p {
       color: darken($white, 40);
     }
+    .disqus-comment-count {
+      color:$black;
+      float: right;
+      display: inline-block;
+      font-size: 16px;
+      padding-top: 5px;
+      text-transform: uppercase;
+    }
     .date {
       color: #399f62;
       float: right;
@@ -634,7 +646,7 @@ canvas {
     margin-bottom: 10px;
     display: block;
   }
-  a:not(.btn):not(.pagination_pager) {
+  a:not(.btn):not(.pagination_pager):not(.counter) {
     color: #399f62;
     border-bottom: 1px dotted $green;
   }
@@ -647,6 +659,13 @@ canvas {
       &:first-child {
         margin-top: 20px;
       }
+    }
+  }
+  .right-sub {
+    text-align: right;
+    color: #999;
+    > a {
+      color: $green;
     }
   }
 }
@@ -758,11 +777,6 @@ canvas {
   }
 }
 
-.date-update {
-  text-align: right;
-  color: #999;
-}
-
 .footer-line {
   float: right;
   margin-bottom: 50px;
@@ -818,6 +832,10 @@ canvas {
       }
       h2 {
         font-size: 20px;
+      }
+      .disqus-comment-count {
+        float: right;
+        font-size: 13px;
       }
       .date {
         float: left;
