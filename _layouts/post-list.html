@@ -10,7 +10,7 @@ layout: compress
     <div class="block-left">
       <div class="content">
         <a href="{{ site.url }}" class="logo"><img src="{{ site.url }}/images/{{ site.logo | replace: '.', '-small.' }}" alt="Blog-logo"></a>
-        <h1 class="section-title">{{ page.title}}<em>/</em>
+        <h1 class="section-title">{{ page.title }}<em>/</em>
         </h1>
       </div>
     </div>
@@ -21,7 +21,7 @@ layout: compress
       </a>
       <div class="content">
         <ul class="posts-list">
-        {% for post in site.posts %}
+        {% for post in paginator.posts %}
           <li>
             <h2>
               <a href="{{ site.url }}{{ post.url }}" class="post-title">
@@ -40,6 +40,13 @@ layout: compress
           </li>
           {% endfor %}
         </ul>
+        {% if paginator.page_trail %}
+          {% for trail in paginator.page_trail %}
+            <li {% if page.url == trail.path %} class="selected" {% endif %}>
+                <a href="{{ trail.path | remove_first: 'index.html' | prepend: site.url }}" title="{{ trail.title }}">{{ trail.num }}</a>
+            </li>
+          {% endfor %}
+        {% endif %}
       </div>
     </div>
     {% include overlay.html %}
