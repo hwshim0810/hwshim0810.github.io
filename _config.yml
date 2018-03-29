@@ -12,7 +12,7 @@ background:
   default-post: images/unsplash-gallery-image-3.jpg   # this image will be shown when post's front matter doesn't specify any image
 
 # Jekyll
-permalink:          /:title/
+permalink:          /:year/:month/:title
 markdown:           kramdown
 highlighter:        rouge
 kramdown:
@@ -58,6 +58,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jemoji
+  - jekyll-paginate-v2
 
 # Custom collections
 collections:
@@ -65,6 +66,15 @@ collections:
     output: true
   about:
     output: true
+
+# Pagination
+pagination:
+  enabled: true
+  debug: true
+  per_page: 7
+  sort_reverse: true
+  permalink: '/:num/'
+  title: ':title'
 
 # Exclude list
 include: [_pages]
