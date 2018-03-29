@@ -70,7 +70,7 @@ collections:
 # Pagination
 pagination:
   enabled: true
-  debug: true
+  debug: false
   per_page: 7
   sort_reverse: true
   permalink: '/:num/'
