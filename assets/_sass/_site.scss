@@ -791,6 +791,32 @@ canvas {
   }
 }
 
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.page-item {
+  padding: 8px 16px;
+  margin: 0 5px;
+  border-radius: 5px;
+  li {
+    list-style: none;
+  }
+  &.short-cut {
+    padding: 8px 8px;
+  }
+  &.selected {
+    background-color: $green;
+    li {
+      color: $white;
+    }
+  }
+  &:hover:not(.selected) {
+    background-color: #eaeaea;
+  }
+  transition: background-color .3s;
+}
+
 // Media queries
 @media screen and (max-height: 605px) {
   .post-title-section .section-title {
