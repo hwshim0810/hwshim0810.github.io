@@ -3,6 +3,7 @@ layout: post-list
 title: Til-list
 description: "List of tils"
 permalink: /tils/
+part: TIL
 pagination: 
   enabled: true
   collection: tils
