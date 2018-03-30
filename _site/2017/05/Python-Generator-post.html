@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html> <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> <title>파이썬의 Generator&amp;Yield – Laziness blog</title> <meta name="description" content="개요 Iterator를 생성해주는 function"> <meta name="keywords" content="Python"> <!-- Twitter Cards --> <meta name="twitter:card" content="summary"> <meta name="twitter:image" content="halve.png"> <meta name="twitter:title" content="파이썬의 Generator&amp;Yield"> <meta name="twitter:description" content="개요 Iterator를 생성해주는 function"> <!-- Open Graph --> <meta property="og:locale" content="ko_KR"> <meta property="og:type" content="article"> <meta property="og:title" content="파이썬의 Generator&amp;Yield"> <meta property="og:description" content="개요 Iterator를 생성해주는 function"> <meta property="og:url" content="http://localhost:4000/2017/05/Python-Generator-post"> <meta property="og:site_name" content="Laziness blog"> <meta property="og:image" content="http://localhost:4000/images/halve.png"> <link rel="canonical" href="http://localhost:4000/2017/05/Python-Generator-post"> <!-- Handheld --> <meta name="HandheldFriendly" content="True"> <meta name="MobileOptimized" content="320"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Feed --> <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Laziness blog"> <!-- Favicons --> <link rel="shortcut icon" type="image/png" href="http://localhost:4000/favicon.png"> <link rel="shortcut icon" href="http://localhost:4000/favicon.ico"> <!-- CSS --> <link rel="stylesheet" type="text/css" href="http://localhost:4000/assets/css/main.css"> <!-- Left Block Image for Posts --> <style type="text/css"> #posts.inner-post-page .block-left {background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(http://localhost:4000/images/unsplash-gallery-image-3.jpg) no-repeat;background-size: cover;} </style> <!-- Left Block Images for Home and Pages --> <style type="text/css"> #posts .block-left {background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(http://localhost:4000/images/unsplash-image-10.jpg) no-repeat;background-size: cover, cover;} .block-left {background: linear-gradient(rgba(44,45,51,0.9), rgba(44,45,51,0.9)), url(http://localhost:4000/images/home.png) no-repeat;background-size: cover;} </style> </head> <body id="posts" class="inner-post-page"> <div class="block-left"> <div class="content"> <a href="http://localhost:4000" class="logo"><img src="http://localhost:4000/images/halve.png" alt="Blog-logo"></a> <div class="post-title-section"> <div class="section-line">Posts <em>/</em>
+</div> <h1 class="section-title">파이썬의 Generator&amp;Yield </h1> <ul class="tags"> <li><a href="http://localhost:4000/tags#Python">Python</a></li> </ul> <div class="section-line reverse">
+<a href="http://localhost:4000/posts">Back to posts</a> <em>/</em>
+</div> </div> </div> </div> <div class="block-right"> <a href="http://localhost:4000/about" title="about" class="about-menu-icon"><i class="fa fa-fw fa-user-circle"></i></a> <a href="http://localhost:4000/tils" title="tils" class="til-menu-icon"><i class="fa fa-fw fa-leanpub"></i></a> <a href="http://localhost:4000/posts" title="posts" class="posts-menu-icon"></a> <a title="projects" class="projects-menu-icon"> <span></span> </a> <div class="inner-post content"> <div class="date-highlight">08 May 2017</div> <div class="right-sub"> <span><img class="emoji" title=":mailbox_with_mail:" alt=":mailbox_with_mail:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4ec.png" height="20" width="20"> </span> <a class="counter" href="http://localhost:4000/2017/05/Python-Generator-post#disqus_thread" data-disqus-identifier="/2017/05/Python-Generator-post">0 Comment</a> </div> <h1 id="개요">개요</h1> <blockquote> <p>Iterator를 생성해주는 function</p> </blockquote> <ul> <li>Iterator는 <strong>next()</strong> method를 이용하여 데이터에 순차적으로 접근이 가능한 객체</li> </ul> <h1 id="일반-function과의-차이">일반 function과의 차이</h1> <ul> <li>Yield 구문의 포함</li> <li>일반 함수는 사용이 종료되면 결과를 호출한곳으로 <strong>return</strong>
+</li> <li>그 후, 함수자체를 종료하고 메모리에서 <strong>Clear</strong>
+</li> </ul> <h1 id="yield">yield</h1> <ul> <li>Generator함수는 yield를 만나면 해당 함수는 그 상태로 정지</li> <li>반환값은 next()를 호출한 곳으로 전달</li> <li>그 후, 함수가 종료되지 않고 그 상태로 유지 <ul> <li>함수에서 사용된 지역변수 등 함수 내부의 데이터가 <strong>메모리에 유지</strong>
+</li> </ul> </li> </ul> <h2 id="예시">예시</h2> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">def</span> <span class="nf">gen</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+  <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+  <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
+   <span class="k">yield</span> <span class="n">i</span>
+   <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+
+ <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">gen</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+  <span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</code></pre></div></div> <ol> <li>우선적으로 for block의 gen()이 호출됨</li> <li>함수 내부에서 진행하다 while 내부에서 yield를 만남</li> <li>Return 을 만난것 처럼 호출부로 반환 (여기서는 0) 그 후 함수가 종료되지 않음</li> <li>X에 yield로 받은 0이 대입되고 print 후 다시 반복하여 gen()을 호출</li> <li>다시 gen()이 처음부터 시작되지 않고 yield 이후부터 시작(여기선 i += 1)</li> <li>While 내부에 있기 때문에 yield를 다시만나 증가한 값을 전달</li> <li>반복…</li> </ol> <h1 id="generator-expression">generator expression</h1> <ul> <li>List comprehension과 비슷함 : [ ]를 사용</li> <li>Generator function 쉽게 사용하기 위함 : ( )를 사용</li> </ul> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># List comprehension</span>
+<span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span><span class="p">]</span>
+<span class="c"># [1, 3, 5, 7, 9]</span>
+
+<span class="c"># Generator expression</span>
+<span class="p">(</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span><span class="p">)</span>
+<span class="c"># &lt;generator object &lt;genexpr&gt; 0x0168F810&gt;</span>
+</code></pre></div></div> <h1 id="활용">활용</h1> <ul> <li>Lazy evaluation</li> </ul> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">sleep_func</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<span class="k">print</span> <span class="s">"sleep..."</span>
+<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="k">return</span> <span class="n">x</span>
+</code></pre></div></div> <p>위와 같은 함수가 있을 때, List와 Generator의 차이는</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># list 생성</span>
+<span class="nb">list</span> <span class="o">=</span><span class="err"> </span><span class="p">[</span><span class="n">sleep_function</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">:</span>
+<span class="k">print</span> <span class="n">i</span>
+
+<span class="c"># 결과</span>
+<span class="n">sleep</span><span class="o">...</span>
+<span class="n">sleep</span><span class="o">...</span>
+<span class="n">sleep</span><span class="o">...</span>
+<span class="n">sleep</span><span class="o">...</span>
+<span class="n">sleep</span><span class="o">...</span>
+<span class="mi">0</span>
+<span class="mi">1</span>
+<span class="mi">2</span>
+<span class="mi">3</span>
+<span class="mi">4</span>
+</code></pre></div></div> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># generator 생성</span>
+<span class="n">gen</span> <span class="o">=</span> <span class="p">(</span><span class="n">sleep_function</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">gen</span><span class="p">:</span>
+<span class="k">print</span> <span class="n">i</span>
+
+<span class="c"># &lt;결과&gt;</span>
+<span class="n">sleep</span><span class="o">...</span>
+<span class="mi">0</span>
+<span class="n">sleep</span><span class="o">...</span>
+<span class="mi">1</span>
+<span class="n">sleep</span><span class="o">...</span>
+<span class="mi">2</span>
+<span class="n">sleep</span><span class="o">...</span>
+<span class="mi">3</span>
+<span class="n">sleep</span><span class="o">...</span>
+<span class="mi">4</span>
+</code></pre></div></div> <ul> <li>List comprehension은 List의 모든 값을 먼저 수행 <ul> <li>함수의 수행시간이 길거나 List값이 매우 큰 경우 부담</li> </ul> </li> <li>Generator의 경우 생성 시에는 실제 값을 로딩하지는 않음 <ul> <li>필요할 때 하나씩 수행하며 값을 불러온다 <blockquote> <p><strong>수행시간이 긴 연산을 필요한 순간까지 늦출 수 있다</strong></p> </blockquote> </li> </ul> </li> </ul> <br> <a href="https://twitter.com/intent/tweet?text=http://localhost:4000/2017/05/Python-Generator-post" class="btn btn_twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a> <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/2017/05/Python-Generator-post" class="btn btn_facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a> <a href="https://plus.google.com/share?url=http://localhost:4000/2017/05/Python-Generator-post" class="btn btn_google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a> <nav class="pagination"> <a href="http://localhost:4000/2017/05/TDD-Access-post" class="pagination_pager" title="테스트 주도 개발 접근법 ">previous</a> <a href="http://localhost:4000/2017/05/Python-With-post" class="pagination_pager" title="With statement in python ">next</a> </nav> <hr class="disqus-seperator"> <div id="disqus_thread"></div> <script> /** * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS. * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/ /**/ var disqus_config = function () { this.page.url = 'http://localhost:4000/2017/05/Python-Generator-post'; this.page.identifier = '/2017/05/Python-Generator-post'; }; (function() { var d = document, s = d.createElement('script'); s.src = 'https://myblog-4mp0ry3tqm.disqus.com/embed.js'; s.setAttribute('data-timestamp', +new Date()); (d.head || d.body).appendChild(s); })(); </script> <script id="dsq-count-scr" src="https://myblog-4mp0ry3tqm.disqus.com/count.js" async></script> <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript> </div> </div> <!-- JS --> <script src="http://localhost:4000/assets/js/main.min.js"></script> <div class="overlay"> <ul class="projects-menu"> <li style="background:url(https://github.com/hwshim0810/restaurance-Chrome-Extension/raw/master/img/page_main_pic.png) center center no-repeat;"> <a href="https://github.com/hwshim0810/restaurance-Chrome-Extension" target="_blank" rel="nofollow external"> <span> Be The Restaurance </span> </a> </li> </ul> </div> </body> </html>
