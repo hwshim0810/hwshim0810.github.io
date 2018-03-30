@@ -9,10 +9,9 @@ before_script:
 # `install` 단계에 `bundle install` 이 디폴트로 실행
 script: ./scripts/cibuild
 
-# 브랜치 화이트리스트. GitHub Pages 에서만 사용됨
-#branches:
-#  only:
-#  - gh-pages     # gh-pages 브랜치를 테스트 함
+branches:
+ only:
+ - develop
 #  - /pages-(.*)/ # "pages-" 로 시작하는 모든 브랜치를 테스트 함
 
 env:
