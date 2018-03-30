@@ -21,7 +21,12 @@ layout: compress
       </a>
       <div class="content">
         <ul class="posts-list">
-        {% for post in paginator.posts %}
+        {% if page.part == 'POST' %}
+          {% assign collections = site.posts %}
+        {% else %}
+          {% assign collections = site.tils %}
+        {% endif %}
+        {% for post in collections %}
           <li>
             <h2>
               <a href="{{ site.url }}{{ post.url }}" class="post-title">
@@ -40,7 +45,6 @@ layout: compress
           </li>
           {% endfor %}
         </ul>
-        {% include list-navigation.html %}
       </div>
     </div>
     {% include overlay.html %}
