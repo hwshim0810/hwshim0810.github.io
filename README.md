@@ -5,6 +5,8 @@
 
 
 ### History
+- 2018.03.30
+  - Apply travis ci
 - 2018.03.15
   - Publish next version blog (ver0.2)
 - 2017.04.02
