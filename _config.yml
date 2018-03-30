@@ -1,4 +1,5 @@
 # Site
+version: 0.30
 title: Laziness blog
 description: effort less, more gain
 url: https://hwshim0810.github.io
@@ -58,7 +59,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jemoji
-  - jekyll-paginate-v2
 
 # Custom collections
 collections:
@@ -66,15 +66,6 @@ collections:
     output: true
   about:
     output: true
-
-# Pagination
-pagination:
-  enabled: true
-  debug: false
-  per_page: 7
-  sort_reverse: true
-  permalink: '/:num/'
-  title: ':title'
 
 # Exclude list
 include: [_pages]
