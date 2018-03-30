@@ -5,6 +5,8 @@
 
 
 ### History
+- 2018.03.31
+  - Version 0.3 release
 - 2018.03.30
   - Apply travis ci
 - 2018.03.15
