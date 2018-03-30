@@ -1,9 +1,8 @@
 ---
-layout: post-list
+layout: til-list
 title: Til-list
 description: "List of tils"
 permalink: /tils/
-part: TIL
 pagination: 
   enabled: true
   collection: tils
