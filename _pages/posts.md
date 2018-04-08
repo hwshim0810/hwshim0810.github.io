@@ -3,7 +3,6 @@ layout: post-list
 title: Posts
 description: "List of posts"
 permalink: /posts/
-part: POST
 pagination:
   enabled: true
   permalink: /:num/
