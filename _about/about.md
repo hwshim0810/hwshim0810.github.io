@@ -16,6 +16,11 @@ permalink: /about/
 ## Contact
 [![e-mail](https://img.shields.io/badge/email-hyunwoo.shim@laziness.xyz-blue.svg)](mailto:hyunwoo.shim@laziness.xyz)
 
+## Github
+<figure>
+  <img src="http://ghchart.rshah.org/hwshim0810" alt="My Github Chart" />
+</figure>
+
 ## Tech Stack
 
 | Classification  | Stack  |
