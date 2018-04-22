@@ -2,3 +2,8 @@
   url: https://github.com/hwshim0810/restaurance-Chrome-Extension
   image: https://github.com/hwshim0810/restaurance-Chrome-Extension/raw/master/img/page_main_pic.png
   completed: true
+
+- title: Gabia SMS Module
+  url: https://pypi.org/project/gabia-sms-Django/
+  image: https://github.com/hwshim0810/hwshim0810.github.io/blob/master/images/sms-moule.png?raw=true
+  completed: true
