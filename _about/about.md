@@ -26,15 +26,15 @@ permalink: /about/
 | Classification  | Stack  |
 |---|---|
 | Language  | Java, Kotlin, Python, JSP/Servlet, Javascript, HTML5, CSS/SASS, markdown  |
-| Framework | Spring, SpringBoot, Android, Django, iBatis/myBatis, Node.js  |
-| DataStores | PostgreSQL, Oracle, MySQL, Redis, Celery |
-| Libraries | React.js, ReactNative, Redux.js, Django RestFramework, Pandas, Bootstrap, jQuery  |
-| devOps  | Docker, DockerCompose, Amazon AWS EC2/S3/RDS/Route53/Elastic Beanstalk, Firebase DB/Cloud Messaging  |
+| Framework | Spring, SpringBoot, Android, Django, Node.js  |
+| DataStores | PostgreSQL, Oracle, MySQL, Redis |
+| Libraries | RxJava, React.js, ReactNative, Redux.js, Django RestFramework, Celery, Jekyll, Pandas, Bootstrap, jQuery  |
+| devOps  | Docker, DockerCompose, Amazon AWS EC2/S3/RDS/Route53/Elastic Beanstalk/CloudWatch, Firebase Auth/DB/Cloud Messaging  |
 | Version Control | Git, Github, Gitlab, Bitbucket |
-| Build/Test | pytest, Selenium, Webpack, Gradle, Maven, Mocha |
+| Build/Test | JUnit, pytest, Selenium, Webpack, Gradle, Maven, Mocha, Travis |
 | Monitoring | Crashlytics, Sentry |
 | OS | Ubuntu, Windows |
-| Tools | Jira, Slack, Trello, Postman, Jekyll |
+| Tools | Jira, Slack, Trello, Postman |
 | Editor | Eclipse, IntelliJ/Android Studio, PyCharm, VSCode |
 
 - Skilled Communicator: goal-oriented, outstanding communication and interpersonal skills, high-motivator
