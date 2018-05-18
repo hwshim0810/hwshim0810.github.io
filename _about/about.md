@@ -29,7 +29,7 @@ permalink: /about/
 | Framework | Spring, SpringBoot, Android, Django, Node.js  |
 | DataStores | PostgreSQL, Oracle, MySQL, Redis |
 | Libraries | RxJava, React.js, ReactNative, Redux.js, Django RestFramework, Celery, Jekyll, Pandas, Bootstrap, jQuery  |
-| devOps  | Docker, DockerCompose, Amazon AWS EC2/S3/RDS/Route53/Elastic Beanstalk/CloudWatch, Firebase Auth/DB/Cloud Messaging  |
+| devOps  | Docker, DockerCompose, Amazon AWS EC2/S3/RDS/Route53/Elastic Beanstalk/CloudWatch/Lambda, Firebase Auth/DB/Cloud Messaging  |
 | Version Control | Git, Github, Gitlab, Bitbucket |
 | Build/Test | JUnit, pytest, Selenium, Webpack, Gradle, Maven, Mocha, Travis |
 | Monitoring | Crashlytics, Sentry |
