@@ -32,7 +32,8 @@ polls/
   - 위쪽예시에서 등록된 명령어는 `closepoll`
 
 #### 모듈
-- 명령어 모듈은 `django.core.management.base.BaseCommand`를 상속받는 `Command`라는 이름의 클래스를 정의해야한다.
+- 명령어 모듈은 `django.core.management.base.BaseCommand`를 상속받는 `Command`라는 이름의 클래스를 정의해야한다.  
+
 ```python
 from django.core.management.base import BaseCommand, CommandError
 from polls.models import Question as Poll
@@ -67,7 +68,9 @@ class Command(BaseCommand):
   - 여러개를 받고 싶다면 '+'
     - 여러개를 받았다면 `handle`의 `options`에 인자명을 키값으로 하여 값을 받음
   - 숫자를 입력하면 숫자만큼의 명령어 인자를 받게됨
-  - ex) 위의 예시에서 1을 지정한 경우 `parser.add_argument('poll_id', nargs=1, type=int)`
+  - ex) 위의 예시에서 1을 지정한 경우 `parser.add_argument('poll_id', nargs=1, type=int)`  
+    
+    
 ```bash
 $ python manage.py closepoll 5  -> OK
 $ python manage.py closepoll 5 22
