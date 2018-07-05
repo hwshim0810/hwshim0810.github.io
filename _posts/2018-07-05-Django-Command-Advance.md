@@ -34,6 +34,8 @@ class Job(models.Model):
 
 ### 더미 데이터 생성 모델 정의
 - 생성가능한 더미 데이터의 정보는 [Faker Docs](https://faker.readthedocs.io/en/latest/index.html)참조
+
+
 ```python
 # _provider.py
 import factory
