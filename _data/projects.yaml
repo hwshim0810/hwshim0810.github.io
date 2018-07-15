@@ -3,6 +3,11 @@
   image: https://github.com/hwshim0810/restaurance-Chrome-Extension/raw/master/img/page_main_pic.png
   completed: true
 
+- title: DailyCommit
+  url: https://play.google.com/store/apps/details?id=xyz.laziness.dailycommit
+  image: https://github.com/hwshim0810/DailyCommit-Android-Kotlin/blob/master/ext_assets/promo/dailycommit-promo.jpg?raw=true
+  completed: true
+
 - title: Gabia SMS Module
   url: https://pypi.org/project/gabia-sms-Django/
   image: https://github.com/hwshim0810/hwshim0810.github.io/blob/master/images/sms-moule.png?raw=true
