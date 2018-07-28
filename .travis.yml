@@ -13,9 +13,7 @@ script: ./scripts/cibuild
 
 branches:
  only:
- - develop
  - master
-#  - /pages-(.*)/ # "pages-" 로 시작하는 모든 브랜치를 테스트 함
 
 env:
   global:
