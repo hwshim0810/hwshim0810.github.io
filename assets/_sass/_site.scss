@@ -613,6 +613,17 @@ canvas {
   }
 }
 
+.extra-tags {
+  font-size: 16px;
+  background-color: #72cc96;
+  color: $white;
+  padding: 0px 5px;
+  border-radius: 0.5em;
+  &.blue {
+    background-color: $ocean-blue;
+  }
+}
+
 .inner-post {
   h1 {
     font-size: 70px;
@@ -624,10 +635,14 @@ canvas {
     line-height: 30px;
     margin-top: 20px;
     margin-bottom: 30px;
+    font-weight: bold;
+    color: $ocean-blue;
+  }
+  h3 {
+    font-weight: bold;
+    color: $deep-green;
   }
   h1,
-  h2,
-  h3,
   h4,
   h5,
   h6 {
