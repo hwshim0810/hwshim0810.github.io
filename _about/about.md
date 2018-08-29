@@ -35,7 +35,7 @@ permalink: /about/
 | Monitoring | Crashlytics, Sentry |
 | OS | Ubuntu, Windows |
 | Tools | Jira, Slack, Trello, Postman |
-| Editor | Eclipse, IntelliJ/Android Studio, PyCharm, VSCode |
+| Editor | IntelliJ/Android Studio, PyCharm, VSCode |
 
 - Skilled Communicator: goal-oriented, outstanding communication and interpersonal skills, high-motivator
 - Challenger: willingness to learn quickly and be challenged to grow, exceptional troubleshooting capabilities
@@ -43,15 +43,19 @@ permalink: /about/
 
 ## Experience
 
-### 아테나스랩 (Athenaslab) 
-> 2017.05 ~ Now
+### 아테나스랩 (Athenaslab) :: <span class="extra-tags">2017.05 ~ Now</span>
 
 - Prompie : Freelancer searching service
   - Backend developer
-  - Django
+  - <span class="extra-tags blue">Python Django Framework</span>
+    <span class="extra-tags blue">Vue.js</span>
 - Moa : Community service
   - Backend / Andorid developer
-  - Spring framework, Android
+  - Spring framework, Android 
+
+## Opensource
+- [Django Allauth](https://github.com/pennersr/django-allauth)
+  - [![Commit](https://img.shields.io/badge/commit-9c31b6576628e9d6971349abc189dfd613d6591e-%2372cc96.svg)](https://github.com/pennersr/django-allauth/commit/9c31b6576628e9d6971349abc189dfd613d6591e)
 
 ## Educated
 - Korea National Open University
