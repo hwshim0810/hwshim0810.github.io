@@ -43,7 +43,7 @@ permalink: /about/
 
 ## Experience
 
-### 아테나스랩 (Athenaslab) :: <span class="extra-tags">2017.05 ~ Now</span>
+### 아테나스랩 (Athenaslab) :: <span class="extra-tags">2017.05 ~ 2018.08</span>
 
 - Prompie : Freelancer searching service
   - Backend developer
@@ -51,7 +51,8 @@ permalink: /about/
     <span class="extra-tags blue">Vue.js</span>
 - Moa : Community service
   - Backend / Andorid developer
-  - Spring framework, Android 
+  - <span class="extra-tags blue">Java Spring Framework</span>
+    <span class="extra-tags blue">Android</span>
 
 ## Opensource
 - [Django Allauth](https://github.com/pennersr/django-allauth)
