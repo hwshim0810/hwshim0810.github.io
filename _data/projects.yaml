@@ -10,5 +10,10 @@
 
 - title: Gabia SMS Module
   url: https://pypi.org/project/gabia-sms-Django/
-  image: https://github.com/hwshim0810/hwshim0810.github.io/blob/master/images/sms-moule.png?raw=true
+  image: images/gabia-module.png
+  completed: true
+
+- title: Cafe24 SMS Module
+  url: https://pypi.org/project/cafe24-sms-Django/
+  image: images/cafe24-module.png
   completed: true
