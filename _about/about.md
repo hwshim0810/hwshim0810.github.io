@@ -1,7 +1,9 @@
 ---
-layout: about
+layout: contents
 title: About
 description: "About blog manager"
+section_name: About
+section_title: Profile
 permalink: /about/
 ---
 
