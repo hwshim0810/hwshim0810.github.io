@@ -1,5 +1,5 @@
 ---
-layout: general_contents
+layout: contents
 title: DailyCommit privacy policy
 description: "DailyCommit privacy policy for Android"
 section_name: Privacy policy
