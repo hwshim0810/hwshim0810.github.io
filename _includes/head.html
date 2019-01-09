@@ -7,10 +7,14 @@
   {% else %}
   <title>{{ site.title }}</title>
   {% endif %}
-  {% if page.excerpt %}
-  <meta name="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">
+  {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
   {% else %}
-  <meta name="description" content="{{ site.description }}">
+    {% if page.excerpt %}
+    <meta name="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">
+    {% else %}
+    <meta name="description" content="{{ site.description }}">
+    {% endif %}
   {% endif %}
   {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
   <!-- Twitter Cards -->
@@ -20,14 +24,26 @@
   {% else %}<meta name="twitter:card" content="summary">
   <meta name="twitter:image" content="{{ site.logo }}">{% endif %}
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-  {% if page.excerpt %}<meta name="twitter:description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+  {% if page.description %}
+    <meta name="twitter:description" content="{{ page.description }}">
+  {% else %}
+    {% if page.excerpt %}
+    <meta name="twitter:description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">
+    {% endif %}
+  {% endif %}
   {% if site.twitter %}<meta name="twitter:site" content="@{{ site.twitter }}">
   <meta name="twitter:creator" content="@{{ site.twitter }}">{% endif %}
   <!-- Open Graph -->
   <meta property="og:locale" content="{{ site.locale }}">
   <meta property="og:type" content="article">
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-  {% if page.excerpt %}<meta property="og:description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+  {% if page.description %}
+    <meta property="og:description" content="{{ page.description }}">
+  {% else %}
+    {% if page.excerpt %}
+    <meta property="og:description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">
+    {% endif %}
+  {% endif %}
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
   <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:image" content="{{ site.url }}/images/{{ site.logo }}">
@@ -38,7 +54,7 @@
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Google search console -->
-  <meta name="google-site-verification" content="k68A3-y2a-2uaM_hr-3aL2F9E14cmksypO29UxqvI3A" />
+  <meta name="google-site-verification" content="fGFFAOgOQcXxkKgAHWv6Yd-qRhG1lU9LDjblFbj-uUs" />
   <!-- Feed -->
   {% feed_meta %}
   <!-- Favicons -->
