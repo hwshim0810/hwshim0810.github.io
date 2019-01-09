@@ -28,7 +28,9 @@
     <meta name="twitter:description" content="{{ page.description }}">
   {% else %}
     {% if page.excerpt %}
-    <meta name="twitter:description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">
+      <meta name="twitter:description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">
+    {% else %}
+      <meta name="twitter:description" content="{{ site.description }}">
     {% endif %}
   {% endif %}
   {% if site.twitter %}<meta name="twitter:site" content="@{{ site.twitter }}">
@@ -41,7 +43,9 @@
     <meta property="og:description" content="{{ page.description }}">
   {% else %}
     {% if page.excerpt %}
-    <meta property="og:description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">
+      <meta property="og:description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">
+    {% else %}
+      <meta property="og:description" content="{{ site.description }}">
     {% endif %}
   {% endif %}
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
