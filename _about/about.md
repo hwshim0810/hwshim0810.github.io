@@ -28,36 +28,46 @@ permalink: /about/
 
 ## Tech Stack
 
-| Classification  | Stack                                                                                                                      |
-| --------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| Language        | Java, Kotlin, Python, JSP/Servlet, Javascript, HTML5, CSS/SASS, markdown                                                   |
-| Framework       | Spring, SpringBoot, Android, Django, Node.js                                                                               |
-| DataStores      | PostgreSQL, Oracle, MySQL, Redis                                                                                           |
-| Libraries       | RxJava, React.js, ReactNative, Redux.js, Django RestFramework, Celery, Jekyll, Pandas, Bootstrap, jQuery                   |
-| devOps          | Docker, DockerCompose, Amazon AWS EC2/S3/RDS/Route53/Elastic Beanstalk/CloudWatch/Lambda, Firebase Auth/DB/Cloud Messaging |
-| Version Control | Git, Github, Gitlab, Bitbucket                                                                                             |
-| Build/Test      | JUnit, pytest, Selenium, Webpack, Gradle, Maven, Mocha, Travis                                                             |
-| Monitoring      | Crashlytics, Sentry                                                                                                        |
-| OS              | Ubuntu, Windows                                                                                                            |
-| Tools           | Jira, Slack, Trello, Postman                                                                                               |
-| Editor          | IntelliJ/Android Studio, PyCharm, VSCode                                                                                   |
+| Classification  | Stack                                                                                                                                                           |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Language        | Python, Javascript, Java, Kotlin, JSP/Servlet, HTML5, CSS/SASS, markdown                                                                                        |
+| Framework       | Spring, SpringBoot, Android, Django, Node.js                                                                                                                    |
+| DataStores      | PostgreSQL, Oracle, MySQL, Redis                                                                                                                                |
+| Libraries       | RxJava, React.js, ReactNative, Redux, Django RestFramework                                                                                                      |
+| devOps          | Docker, DockerCompose, Terraform, Amazon AWS EC2/S3/RDS/Route53/ElasticBeanstalk/CloudWatch/Lambda/ECS/Codebuild/CodePipeline, Firebase Auth/DB/Cloud Messaging |
+| Version Control | Git, Github, Gitlab, Bitbucket                                                                                                                                  |
+| Build/Test      | JUnit, pytest, Selenium, Webpack, Gradle, Maven, Mocha, Travis                                                                                                  |
+| Monitoring      | Crashlytics, Sentry                                                                                                                                             |
+| OS              | Ubuntu, Windows                                                                                                                                                 |
+| Tools           | Jira, Slack, Trello, Postman                                                                                                                                    |
+| Editor          | IntelliJ/Android Studio, PyCharm, VSCode                                                                                                                        |
 
 - Skilled Communicator: goal-oriented, outstanding communication and interpersonal skills, high-motivator
 - Challenger: willingness to learn quickly and be challenged to grow, exceptional troubleshooting capabilities
 - Creative thinker
 
-## Experience
+## Work Experiences
 
 ### 아테나스랩 (Athenaslab) :: <span class="extra-tags">2017.05 ~ 2018.08</span>
 
-- Prompie : Freelancer searching service
-  - Backend developer
-  - <span class="extra-tags blue">Python Django Framework</span>
-    <span class="extra-tags blue">Vue.js</span>
-- Moa : Community service
-  - Backend / Andorid developer
-  - <span class="extra-tags blue">Java Spring Framework</span>
-    <span class="extra-tags blue">Android</span>
+- Seoul, Republic of Korea
+- Backend / Android Developer
+- Services
+  - Prompie : Freelancer searching service
+    - Backend / Frontend
+    - <span class="extra-tags blue">Python Django Framework</span>
+      <span class="extra-tags blue">Vue.js</span>
+  - Moa : Community service
+    - Backend / Andorid
+    - <span class="extra-tags blue">Java Spring Framework</span>
+      <span class="extra-tags blue">Android</span>
+
+### 일상연구소 (Daily Company) :: <span class="extra-tags">2018.11 ~ Now</span>
+
+- Seoul, Republic of Korea
+- CTO
+- Services
+  - [MemoryFactory](https://www.memoryfactory.co.kr/)
 
 ## Opensource
 
